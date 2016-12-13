@@ -12,6 +12,9 @@ void loop() {
     if (i == HIGH)
       digitalWrite(13, HIGH);
     else
+    {
+      if (digitalRead(13) == HIGH)delay(1000); //+1s
       digitalWrite(13, LOW);
+    }
   }
 }
